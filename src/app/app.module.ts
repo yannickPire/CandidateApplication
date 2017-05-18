@@ -4,10 +4,15 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CandidatesComponent } from './candidates/candidates.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {StringToDatePipe} from './pipes/string-to-date.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CandidatesComponent,
+    StringToDatePipe
   ],
   imports: [
     BrowserModule,
